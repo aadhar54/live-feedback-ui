@@ -9,6 +9,8 @@ import {v4 as uuidv4} from 'uuid';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import AboutPage from './components/pages/AboutPage.jsx';
 import AboutLinkIcon from './components/AboutLinkIcon';
+import Post from './components/Post.jsx';
+import NotFound from './components/NotFound.jsx';
 
 
 function App(){
@@ -41,6 +43,8 @@ function App(){
                 }></Route>           
                 
                 <Route path='/about' element={<AboutPage />} />
+                <Route path='/post' element={<Post />} />
+                <Route path='/notfound' element={<NotFound />} />
             </Routes>
             </div>
         </Router>
